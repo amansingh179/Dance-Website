@@ -1,0 +1,52 @@
+//- index.pug
+doctype html
+html
+  head
+    title Aman Dance Academy 
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+      
+      ul
+        div#logo
+            img(src="/static/logo1.jpg", alt="logo")
+            | Dance India
+        li #[a(href="/") Home ]
+        li #[a(href="/") About ]
+        li #[a(href="/") Contact Us]
+        li #[a(href="/") Class info ]
+        li #[a(href="/") Services]
+
+    section#introSection 
+        div Welcome to My Dance Academy 
+        div.big Eat Sleep Dance Repeat
+
+    section#missionSection 
+      p.head Our Mission 
+        div.card
+          h2 "NO ONE IS BORN A DANCER. YOU HAVE TO WANT IT MORE THAN ANYTHING."
+          p — MIKHAIL BARYSHNIKOV
+        div.card
+          h2 "I DO NOT TRY TO DANCE BETTER THAN ANYONE ELSE. I ONLY TRY TO TO DANCE BETTER THAN MYSELF.”
+          p -MIKHAIL BARYSHNIKOV
+        div.card
+          h2 “THE PROBLEM IS NOT MAKING UP THE STEPS BUT DECIDING WHICH ONES TO KEEP.”
+          p -MIKHAIL BARYSHNIKOV
+
+    section#sponsorsSection 
+      p  Our Sponsors
+      div#sponsors
+        img(src="/static/sponsor1.png", alt="sponsor1" Class="sponImg")
+        img(src="/static/sponsor2.png", alt="sponsor2" Class="sponImg")
+        img(src="/static/sponsor3.png", alt="sponsor3" Class="sponImg")
+
+    
+    section#footer
+      | Created by Aman. © 2022
+          
+    
+
+
+    script
+      include  ../static/index.js
